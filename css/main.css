@@ -1,0 +1,123 @@
+/* reset style */
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end rest style */
+/* variables */
+* {
+  font-family: "B Nazanin", serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+body img {
+  width: 30%;
+}
+body main {
+  flex: 3;
+  background-color: #c5dbf5;
+  position: relative;
+}
+body main form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  justify-content: space-between;
+}
+body main form .form-header, body main form .form-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main form .form-header div, body main form .form-footer div {
+  display: flex;
+}
+body main form .form-header div input, body main form .form-footer div input {
+  margin-left: 5px;
+}
+body main form .form-header input[type=submit], body main form .form-footer input[type=submit] {
+  margin-top: 1rem;
+  padding: 5px 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #2f2f2f;
+}
+body main form .form-header input[type=submit]:hover, body main form .form-footer input[type=submit]:hover {
+  background-color: rgba(129, 129, 129, 0.49);
+  box-shadow: none;
+  cursor: pointer;
+}
+body main form .form-header h2, body main form .form-footer h2 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+body main form .form-header h4, body main form .form-footer h4 {
+  color: rgba(73, 73, 73, 0.49);
+  margin-bottom: 1rem;
+}
+body main form .item input, body main form .email input {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin-top: 0.2rem;
+}
+body main form .email {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-top: 0;
+}
+body main form .item {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+}
+body main form .item .first-item, body main form .item .second-item {
+  margin: 0 1rem 0 1rem;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
